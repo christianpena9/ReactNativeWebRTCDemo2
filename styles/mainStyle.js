@@ -1,0 +1,70 @@
+import {StyleSheet} from 'react-native';
+const Dimensions = require('Dimensions');
+const window = Dimensions.get('window');
+
+export const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      borderWidth: 1,
+      backgroundColor: 'rgb(30,30,30)',
+      borderColor: 'red',
+    },
+    text: {
+        fontSize: 35,
+        color: 'white',
+    },
+    answerCall: {
+        flex:1,
+        width: window.width-2,
+        height:128,
+        borderWidth: 3,
+        borderRadius: 64,
+        borderColor: 'black',
+        backgroundColor: 'rgb(0,165,0)',
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'absolute',
+        top: window.height-155,
+        left: 0,
+    },
+    declineCall: {
+        flex:1,
+        width: 128,
+        height:128,
+        borderWidth: 3,
+        borderRadius: 64,
+        borderColor: 'black',
+        backgroundColor: 'rgb(255,25,50)',
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'absolute',
+        top: window.height-155,
+        left: window.width-129,
+    },
+    endCall: {
+        flex:1,
+        width: window.width-2,
+        height:128,
+        borderWidth: 3,
+        borderRadius: 64,
+        borderColor: 'black',
+        backgroundColor: 'rgb(255,25,50)',
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'absolute',
+        top: window.height-155,
+        left: 0,
+    },
+    videoSmall: {
+        width: 200,
+        height: 200,
+        position: 'absolute',
+        top: 0,
+        left: window.width-158,
+    },
+    videoLarge: {
+        flex: 1,
+        width: window.width,
+        height: window.height,
+    },
+});
